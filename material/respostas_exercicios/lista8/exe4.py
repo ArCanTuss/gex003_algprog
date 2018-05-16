@@ -5,9 +5,13 @@ for i in range(20):
 	numeros.append(n)
 	
 #Remove os número não pares
-for n in numeros:
-	if n % 2 != 0:
-		numeros.remove(n)
+i = 0
+while i < len(numeros):
+	if numeros[i] % 2 != 0:
+		numeros.pop(i)
+	else:
+		i += 1
+		
 	
 print()
 print(numeros)
