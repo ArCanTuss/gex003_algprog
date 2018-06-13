@@ -14,14 +14,18 @@ def imprime_matriz(matriz, ordem):
 			print("{:3}".format(matriz[i][j]), end=" ")
 		print()
 
+def multiplica_matriz(matriz, num):
+	for i in range(4):
+		for j in range(4):
+			matriz[i][j] *= num 
+
 #Principal....
 print("Leitura da matriz:")
 matriz = ler_matriz(4)
 
 num = int(input("Informe o número para mutiplicar: "))
-for i in range(4):
-	for j in range(4):
-		matriz[i][j] *= num 
+
+multiplica_matriz(matriz, num)
 
 print("\nImpressão da matriz:")
 imprime_matriz(matriz, 4)
