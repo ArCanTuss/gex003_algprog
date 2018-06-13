@@ -1,0 +1,2 @@
+Verificação 1 =  0
+Verificação 2 =  1
